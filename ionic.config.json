@@ -1,0 +1,7 @@
+{
+  "name": "ease_order_pagina_principal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
