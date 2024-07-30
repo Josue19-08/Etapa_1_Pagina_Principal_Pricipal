@@ -121,23 +121,31 @@ p.larger-text {
   justify-content: center; /* Centra los botones horizontalmente */
   align-items: center; /* Alinea los botones verticalmente */
   gap: 10px; /* Espacio entre los botones */
+  color: #fff;
 }
 
 .custom-button {
-  margin: 0; /* Elimina el margen individual de los botones */
-  padding: 10px 20px;
-  font-size: 14px;
-  background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
-  border: 2px solid #fff; /* Borde blanco */
-  border-radius: 25px; /* Bordes redondeados */
-  cursor: pointer;
-  text-transform: uppercase; /* Texto en mayúsculas */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
-}
-
-.custom-button:hover {
-  background-color: #333; /* Fondo gris oscuro al pasar el ratón */
+  display: block;
+  width: 180px; /* Ajusta el ancho del botón a 300 píxeles */
+  margin: 5px auto;
+  padding: 12px; /* Aumenta el padding para hacer el botón más alto */
+  border-radius: 20px;
+  color:#fff;
+  --border-color: white;
+  --border-width: 2px;
+  --background: #000000;
+  --color: white;
+  --box-shadow: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9em;
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-top: 0;
+  --inner-padding-bottom: 0;
+  text-align: center; /* Asegura que el texto esté centrado */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Esconde cualquier desbordamiento de texto */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
 }
 
 .social-media-icons {
