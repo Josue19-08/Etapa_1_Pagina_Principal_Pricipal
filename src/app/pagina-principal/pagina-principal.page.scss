@@ -111,8 +111,8 @@
     border-radius: 25px;
     --border-color: white;
     --border-width: 2px;
-    --background: #333;
-    --color: white;
+    --background: #000000;
+    --color: white; /* Asegura que el texto sea blanco */
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
@@ -128,6 +128,7 @@
     transform: scale(0.95);
     transition: transform 0.05s ease;
 }
+
 
 .lower-bottom-container {
     position: relative;
