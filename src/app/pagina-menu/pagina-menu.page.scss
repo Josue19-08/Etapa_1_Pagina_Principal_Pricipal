@@ -84,9 +84,9 @@
 }
 
 .menu-image {
-  width: 90%;
+  width: 100%;
   height: auto;
-  max-height: 500px;
+  max-height: 430px;
   object-fit: contain;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -95,8 +95,9 @@
 
 .button-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Cambio para centrar los botones */
   align-items: center;
+  flex-wrap: wrap; /* Permite que los botones se ajusten si hay muchos */
   padding: 10px;
   z-index: 1;
   margin-top: 30px;
@@ -151,6 +152,24 @@
 }
 
 @media (min-width: 768px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .custom-button {
+      font-size: 1.0em; /* Ajusta este valor según tus necesidades */
+      width: 240px;
+      margin: 10px;
+    }
+  }
+
+  .header, .menu-container, .footer {
+    max-width: 800px; /* Puedes ajustar esto según sea necesario */
+    width: 100%;
+    margin: 0 auto;
+  }
+  
   .background-image.web {
     display: block;
   }
@@ -165,6 +184,8 @@
 
   .custom-button {
     font-size: 1.4em;
+    width: auto; /* Ajuste de tamaño para botones en computadoras */
+    margin: 10px; /* Asegura que haya espacio entre los botones */
   }
 
   .social-media-icons img {
@@ -187,7 +208,9 @@
   }
 
   .custom-button {
-    font-size: 1.2em;
+    font-size: 1.0em;
+    width: 170px;
+    margin: 0px;
   }
 
   .social-media-icons img {
@@ -195,6 +218,3 @@
     height: 25px;
   }
 }
-
-
-// Corrección
